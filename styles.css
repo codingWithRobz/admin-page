@@ -47,11 +47,11 @@ body {
 
 .menuItem > h1 {
   display: none;
-  margin-left: 5%;
+  margin-left: 2rem;
 }
 
 .drawer:hover > .menuItem > h1 {
-  display: inline;
+  display: flex;
 }
 
 .drawer:hover ~ .navbar,
@@ -70,14 +70,18 @@ body {
   cursor: pointer;
 }
 
-.drawer > div:not(:first-child) > * {
-  padding: 1vw 0.1vw 0.1vw 0vw;
-  font-size: calc(20px + 0.2vw);
+a {
+  text-decoration: none;
+}
+
+.drawer > *:not(:first-child) > * {
+  padding: 1rem 0.5rem 0.5rem 1rem;
+  font-size: 22px;
   padding-left: 20px;
 }
-.drawer > div:not(:first-child) > img {
+.drawer > *:not(:first-child) > img {
   width: calc(20px + 0.5vw);
-  width: calc(20px + 0.5vw);
+  height: calc(20px + 0.5vw);
 }
 
 .drawer > div:nth-child(8) {
@@ -94,7 +98,7 @@ body {
   width: calc(40px + 0.7vw);
   height: calc(40px + 0.7vw);
   padding-left: 10px;
-  padding-top: 10;
+  padding-top: 10px;
 }
 /* Navbar Styling */
 .navbar {
@@ -224,6 +228,7 @@ img {
   padding: 2rem;
   border-radius: 0.6rem;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 /0.1);
+  max-width: 30vw;
 }
 
 .projects {
